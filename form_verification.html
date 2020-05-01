@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function checkID(){
+        var x=/E012/i;
+        var user=document.getElementById("name").value;
+        if(x.test(user))
+        {
+            alert("Valid Username");
+        } 
+        else
+        {
+            alert("PLease enter a valid username");
+        }
+    }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="ID" id="name">
+        <button onclick=checkID()>Submit</button>
+    </form>
+</body>
+</html>
